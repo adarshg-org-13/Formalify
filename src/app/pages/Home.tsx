@@ -48,9 +48,59 @@ export function Home({onNavigate} : HomeProps){
                         </button>
                     </div>
 
-                    
+                    <div className="gird grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <FormulaCard
+                          title="Newton's Second Law"
+                          description="Physics: Force is equal to the rate of change of momentum of a body of a const mass."
+                          formula="F = ma"
+                          explaination="F is the net force applied, m is the mass of the object, and a is its acceleration."
+                        />
+                        <FormulaCard
+                          title="Quadratic Formula"
+                          description="Maths: Roots of ax² + bx + c = 0."
+                          formula="x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}"
+                          explaination="a,b and c are the coefficients of the quadratic equation for (a != 0), and x represents the unknown roots."
+                        />
+                        <FormulaCard
+                          title="Ideal Gas Law"
+                          description="Chemistry: Equation of root of state of a hypothetical ideal gas."
+                          formula="PV = nRT"
+                          explaination="P is the Pressure, V is the Volume, n is the number of moles, R is the ideal gas constant, and T is the temperature."
+                        />
+                    </div>
                 </div>
             </section>
-        </div> 
-    )
+
+      {/* Subjects Overview */}
+      <section className="py-20 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold mb-12 text-center flex items-center justify-center gap-3 text-white">
+            <FunctionSquare className="w-8 h-8 text-[#22C55E]" />
+            Curriculum Coverage
+          </h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              { subject: "Physics", topics: ["Mechanics", "Thermodynamics", "Electromagnetism", "Optics"] },
+              { subject: "Mathematics", topics: ["Algebra", "Calculus", "Geometry", "Trigonometry"] },
+              { subject: "Chemistry", topics: ["Physical Chemistry", "Organic Chemistry", "Inorganic Chemistry", "Atomic Structure"] }
+            ].map((item) => (
+              <div key={item.subject} className="p-8 rounded-3xl bg-[#2A2A2A] border border-[#3A3A3A]">
+                <h3 className="text-2xl font-bold mb-6 text-[#22C55E]">{item.subject}</h3>
+                <ul className="space-y-3">
+                  {item.topics.map(topic => (
+                    <li key={topic} className="flex items-center gap-3 text-[#CED0CE] font-medium">
+                      <div className="w-1.5 h-1.5 rounded-full bg-[#22C55E]" />
+                      {topic}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
 }
+
