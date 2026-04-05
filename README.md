@@ -12,6 +12,15 @@ Install Next.js App
 npx create-next-app@latest {your_folder_name}
 ```
 
+This project uses some external modules 
+
+```bash
+npm install lucide-react
+```
+
+```bash
+npm install katex react-katex
+```
 
 You can run the project locally by :-
 
