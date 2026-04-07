@@ -1,4 +1,6 @@
 // Main Navbar file Home page and Formula page
+"use client";
+
 import { Sigma } from "lucide-react";
 
 interface NavbarProps {

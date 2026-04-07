@@ -53,19 +53,19 @@ export function Home({onNavigate} : HomeProps){
                           title="Newton's Second Law"
                           description="Physics: Force is equal to the rate of change of momentum of a body of a const mass."
                           formula="F = ma"
-                          explaination="F is the net force applied, m is the mass of the object, and a is its acceleration."
+                          explanation="F is the net force applied, m is the mass of the object, and a is its acceleration."
                         />
                         <FormulaCard
                           title="Quadratic Formula"
                           description="Maths: Roots of ax² + bx + c = 0."
                           formula="x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}"
-                          explaination="a,b and c are the coefficients of the quadratic equation for (a != 0), and x represents the unknown roots."
+                          explanation="a,b and c are the coefficients of the quadratic equation for (a != 0), and x represents the unknown roots."
                         />
                         <FormulaCard
                           title="Ideal Gas Law"
                           description="Chemistry: Equation of root of state of a hypothetical ideal gas."
                           formula="PV = nRT"
-                          explaination="P is the Pressure, V is the Volume, n is the number of moles, R is the ideal gas constant, and T is the temperature."
+                          explanation="P is the Pressure, V is the Volume, n is the number of moles, R is the ideal gas constant, and T is the temperature."
                         />
                     </div>
                 </div>
