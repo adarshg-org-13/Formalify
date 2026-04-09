@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "./components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({ 
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Formulary",
@@ -17,7 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-[#121212] text-white min-h-screen font-sans`}>
+      {/* 3. Apply montserrat.className to the body */}
+      <body className={`${montserrat.className} bg-[#121212] text-white min-h-screen`}>
         <Navbar />
         <main>
           {children}
