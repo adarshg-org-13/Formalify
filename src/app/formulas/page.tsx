@@ -1,4 +1,4 @@
-//Main formula page
+"use client";
 
 import { useState } from "react";
 import { FormulaCard } from "../components/FormulaCard";
@@ -56,7 +56,7 @@ const formulasData = [
   { subject: "Chemistry", class: "Class 12", topic: "Electrochemistry", title: "Nernst Equation", description: "Cell potential", formula: "E = E^\\circ - \\frac{RT}{nF}\\ln Q", explanation: "E = cell potential, E° = standard cell potential, R = gas constant, T = temperature, n = moles of electrons, F = Faraday constant, Q = reaction quotient." },
 ];
 
-export function Formulas() {
+export default function FormulasPage() {
   const [activeSubject, setActiveSubject] = useState<string>("Physics");
   const [activeClass, setActiveClass] = useState<string>("Class 9");
   const [searchQuery, setSearchQuery] = useState("");

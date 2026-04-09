@@ -1,8 +1,6 @@
-//Formula card file
 "use client";
 
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import "katex/dist/katex.min.css";
 import { BlockMath } from "react-katex";
 import { Copy, Check } from "lucide-react";
@@ -15,7 +13,6 @@ interface FormulaCardProps {
   className?: string;
 }
 
-//Copy to clipboard mechanism
 export function FormulaCard({ title, description, formula, explanation, className }: FormulaCardProps) {
   const [copied, setCopied] = useState(false);
 

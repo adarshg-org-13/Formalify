@@ -1,5 +1,3 @@
-//Main Home Page / Featured Page
-
 import Link from "next/link";
 import { ArrowRight, BookOpen, Calculator, FunctionSquare } from "lucide-react";
 import { FormulaCard } from "./components/FormulaCard";
@@ -58,7 +56,7 @@ export default function HomePage() {
               title="Quadratic Formula"
               description="Maths: Roots of ax² + bx + c = 0."
               formula="x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}"
-              explanation="a, b, and c are coefficients of the quadratic equation where (a !=0 ), and x represents the unknown roots."
+              explanation="a, b, and c are coefficients of the quadratic equation, and x represents the unknown roots."
             />
             <FormulaCard 
               title="Ideal Gas Law"

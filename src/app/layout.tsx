@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
+import { Navbar } from "./components/Navbar";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Formalify - Physics Chemistry & Maths",
-  description: "A comprehensive collection of Physics, Chemistry, and Mathematics formulas."
+  title: "Formulary",
+  description: "Your Ultimate Science & Math Companion",
 };
 
 export default function RootLayout({
@@ -11,10 +15,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return(
+  return (
     <html lang="en">
-      <body className="antialiased">
-        {children}
+      <body className={`${inter.className} bg-[#121212] text-white min-h-screen font-sans`}>
+        <Navbar />
+        <main>
+          {children}
+        </main>
       </body>
     </html>
   );
