@@ -31,8 +31,7 @@ npm run dev
 To visit the website (local hosted):- http://localhost:3000
 
 Some images of the website:-
-![img_main_1]()
-![img_main_2]()
-![img_main_3]()
+![img_main_1](https://github.com/adarshg-org-13/Formalify/blob/9e8133a55f1bd4822e0eac7870ee61753df22cd2/public/img1.png)
+![img_main_2](https://github.com/adarshg-org-13/Formalify/blob/9e8133a55f1bd4822e0eac7870ee61753df22cd2/public/img2.png)
 
-Visit the Website:-
+Visit the Website:- https://formalify.vercel.app/
